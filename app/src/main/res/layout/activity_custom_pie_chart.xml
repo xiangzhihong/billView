@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+ 	<RelativeLayout
+        android:id="@+id/layout_piechart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <xzh.com.billview.view.PieChartView
+            android:id="@+id/parbar_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/text_item_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/parbar_view"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/show_chart_bg"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color1_deepskyblue">#00BFFF</color>
+    <color name="color2_PeachPuff">#FFDAB9</color>
+    <color name="color3_DeepSkyBlue">#00BFFF</color>
+    <color name="color4_Cyan">#00FFFF</color>
+    <color name="color5_SlateBlue">#6A5ACD</color>
+    <color name="color6_LightSeaGreen">#20B2AA</color>
+    <color name="color7_Yellow">#FFFF00</color>
+    <color name="color8_IndianRed">#CD5C5C</color>
+    <color name="color9_DarkGoldenrod">#8B658B</color>
+    <color name="color10_Peru">#CD853F</color>
+    <color name="color11_Beige">#F5F5DC</color>
+    <color name="color12_OrangeRed">#FF4500</color>
+    <color name="color13_Thistle">#D8BFD8</color>
+    <color name="color14_RoyalBlue">#4876FF</color>
+    <color name="color15_Magenta">#FF00FF</color>
+    <color name="color16_Orchid">#FF83FA</color>
+    <color name="color17_Blue">#0000FF</color>
+    <color name="color18_grey">#363636</color>
+    <color name="color19_LightGreen">#90EE90</color>
+    <color name="color20_DarkMagenta">#8B008B</color>
+    <color name="color21_DarkCyan">#008B8B</color>
+    <color name="color22_Yellow">#FFFF00</color>
+    <color name="color23_Green">#00FF00</color>
+    <color name="color24_DarkGreen">#006400</color>
+    <color name="color25_Cyan">#00FFFF</color>
+    <color name="color26_PaleTurquoise">#668B8B</color>
+    <color name="color27_NavyBlue">#000080</color>
+    
+    <color name="random1">#91b266</color>
+    <color name="random2">#eee58a</color>
+    <color name="random3">#dd5526</color>
+    <color name="random4">#e49524</color>
+    <color name="random5">#fec62d</color>
+    <color name="random6">#213e52</color>
+    <color name="random7">#bf8f47</color>
+    <color name="random8">#4c1b1b</color>
+    <color name="random9">#b92025</color>
+    <color name="random10">#d7cb70</color>
+    <color name="random11">#ffd64f</color>
+    <color name="random12">#f7941e</color>
+    <color name="random13">#dc6e27</color>
+    <color name="random14">#f0e5c1</color>
+    <color name="random15">#8baca3</color>
+    <color name="random16">#3b6771</color>
+    
+    <color name="gray0">#F2F2F2</color>
+    <color name="gray1">#E9EAEB</color>
+    <color name="gray2">#C9CACC</color>
+    <color name="gray3">#B0B0B3</color>
+    <color name="gray4">#919195</color>
+    <color name="gray5">#737373</color>
+    <color name="gray7">#606060</color>
+    <color name="gray8">#494949</color>
+    <color name="gray9">#333333</color>
+
+</resources>

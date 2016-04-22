@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0EFF3" >
+    
+    <LinearLayout
+    android:id="@+id/layout_title"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="vertical"
+    android:background="@color/gray9">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:text="记账本" />
+
+</LinearLayout >
+
+    <LinearLayout
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" 
+        android:layout_below="@id/layout_title">
+
+        <TextView
+            android:id="@+id/last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/tv_bg1"
+            android:gravity="left"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/curr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/tv_bg"
+            android:gravity="right"
+            android:paddingRight="10dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_piechart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_layout"
+        android:layout_marginTop="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/pieLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+
+            <xzh.com.billview.view.PieChartView
+                android:id="@+id/parbar_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="40dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="缴费合计(元)"
+                    android:textColor="#BBBDC4"
+                    android:textSize="14sp" />
+
+
+                <xzh.com.billview.view.CountView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3,870.30"
+                    android:textColor="#6B6363"
+                    android:textSize="24sp" 
+                    android:id="@+id/txtMonery"/>
+                    
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="查看明细"
+                    android:textColor="#64BCF3"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_item_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pieLayout"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/show_chart_bg"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:visibility="gone" />
+        
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pieLayout"
+            android:id="@+id/infoLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:visibility="gone">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="医疗缴费"
+                android:layout_centerHorizontal="true"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:id="@+id/txtView3"/>
+            
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="30dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:background="@drawable/group"
+                android:layout_below="@+id/txtView3"
+                android:id="@+id/layoutBaseInfo">
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="缴费基数:"
+                    android:id="@+id/txtView1"
+                    android:textSize="12sp"
+                    android:textColor="#808080"/>
+                
+                <TextView 
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/txtView1"
+                    android:text="1280.00元"
+                    android:gravity="right"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    />
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个人缴费:"
+                    android:id="@+id/txtView2"
+                    android:textSize="12sp"
+                    android:textColor="#808080"
+                    android:layout_below="@id/txtView1"
+                    />
+                
+                <TextView 
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/txtView2"
+                    android:layout_below="@id/txtView1"
+                    android:text="480.00元"
+                    android:gravity="right"
+                    android:textSize="12sp"
+                    android:textColor="#333333"/>
+                
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="变更记录"
+        android:textColor="#808080"
+        android:textSize="14sp" />
+
+</RelativeLayout>
